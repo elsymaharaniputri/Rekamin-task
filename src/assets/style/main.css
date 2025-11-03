@@ -1,0 +1,10 @@
+/* src/assets/style/main.css */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #D6D6D6;
+}
+
+.bg-primary {
+  background-color: #E8E8E8 !important;
+}

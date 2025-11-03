@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <NavbarMenu />
+    <HeroSection />
+    <div class="container-fluid">
+
+      <CardContoh />
+      <CardList />
+    </div>
+
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CardContoh from "./components/CardContoh.vue";
+import CardList from "./components/CardList.vue";
+import HeroSection from "./components/HeroSection.vue";
+import NavbarMenu from "./components/NavbarMenu.vue";
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  name: "App",
+  components: { NavbarMenu, HeroSection, CardContoh, CardList },
+};
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: #E8E8E8;
+}
+
+.container-fluid {
+  background-color: #D6D6D6;
 }
 </style>
